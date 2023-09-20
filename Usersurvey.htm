@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> This is a survey to collect information from users</p>
+    <form id="survey-form">
+        <label id="name-label">Enter your name</label><input placeholder="Joe Shmo" id="name" type="text"
+            required></input>
+        <label id="email-label">Enter your email</label><input placeholder="jr@email.com" id="email" type="email"
+            required></input>
+        <label id="number-label">Enter your age</label><input placeholder="23" min="18" max="120" id="number"
+            type="number"></input>
+        <select id="dropdown">
+            <option>FEMALE</option>
+            <option>MALE</option>
+
+        </select>
+
+        <p id="one"> Would you reccomend us to a friend</p>
+        <label for="yes-button"><input id="yes-button" type="radio" name="rec" value="yes" />
+            <label id="yes-label" for="yes-button">Yes</label>
+
+            <input id="no-button" type="radio" name="rec" value="no" />
+            <label id="no-label" for="no-button">No</label>
+
+            <p id="ptwo"> What category of music is your fav?</p>
+
+            <div>
+
+                <label for="rap"><input value="rap" id="rap" type="checkbox" />Rap</label>
+
+                <label for="pop"><input value="pop" id="pop" type="checkbox" />Pop</label>
+                </li>
+                <label for="jazz"><input value="jazz" id="jazz" type="checkbox" />Jazz</label>
+
+                <label for="country"><input value="country" id="country" type="checkbox" />Country</label>
+
+                <textarea>Additional Comments</textarea>
+
+            </div>
+            <input id="submit" type="submit"> </input>
+    </form>
+
+
+
+    <style>
+        h1 {
+            color: rgb(0, 0, 200);
+            margin: auto;
+            text-align: center;
+
+        }
+
+        p {
+            margin: auto;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        body {
+            background-color: lightblue;
+            width: 100%;
+
+            margin: 10px;
+            font-size: 17px;
+
+        }
+
+        form {
+            width: 60vw;
+            max-width: 500px;
+            min-width: 300px;
+            background-color: rgb(200, 150, 200);
+            padding: 50px;
+            margin: auto;
+            border-style: dashed;
+            border-width: 4px;
+            border-color: black;
+            border-radius: 15px;
+
+        }
+
+        input[type="text"] {
+            display: block;
+
+        }
+
+        input[type="email"] {
+            display: block;
+
+        }
+
+        input[type="number"] {
+            display: block;
+
+        }
+
+        #one {
+            margin-bottom: 0px;
+            margin-top: 15px;
+        }
+
+        #yes-button {
+            margin-top: 10px;
+            margin-left: 170px;
+        }
+
+        #no-button {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        #name,
+        #email,
+        #number {
+            margin-bottom: 6px;
+        }
+
+        div {}
+
+        input[type="checkbox"] {
+
+            margin-left: 50px;
+
+        }
+
+        #ptwo {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        textarea {
+            margin-top: 10px;
+            padding: 5px;
+            margin-left: 115px;
+        }
+
+        #submit {
+
+            background-color: rgb(20, 200, 200);
+            color: rgb(0, 0, 0);
+            width: 50%;
+            margin-left: 100PX;
+            margin-top: 10PX;
+            height: 35px;
+            font-size: 20px;
+
+        }
+
+        #description {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
